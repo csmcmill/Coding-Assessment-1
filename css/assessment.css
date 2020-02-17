@@ -1,0 +1,53 @@
+h1{
+    text-align: center; 
+}
+
+img{
+    width: 125px; 
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ div{
+    padding: 25px; 
+    margin:5px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+ body{
+    margin: 1.2em;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/background.jpeg');
+    background-color: #DDDDDD;
+}
+
+
+.A, .C, .E, .G, .I{
+    grid-row: 1 / span 1; 
+
+}
+.B, .D, .F, .H{
+    grid-row: 2 / span 1; 
+
+}
+
+@media all and (min-width: 800px){
+    .mystuff{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    } 
+    .A, .C, .E, .G, .I{
+  
+        border: 2px solid black; 
+    
+    }
+    .B, .D, .F, .H{
+        grid-row: 2; 
+    }
+
+}
